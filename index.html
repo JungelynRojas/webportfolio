@@ -3,49 +3,44 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="./index.css">
-
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@400;700&family=Zilla+Slab&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&family=Zilla+Slab&display=swap" rel="stylesheet">
 
 	<title>Capstone 1 Project</title>
 </head>
 <body>
-	<nav>
-		<ul>
-            <li class="nav-logo">
-                <img src="./images/LOGO.jpg" id="logo">
-            </li>
-            <div class="right-nav">  
-                <li class="nav">Home</li>
-                <li class="nav">Menu</li>
-                <li class="nav">Contact Us</li>
-                <li class="nav">Leave a Comment</li>
-                <li class="nav">
-                    <button class="order-button">ORDER NOW</button>
-                </li>
-            </div>
-        </ul>
-	</nav>
+	<div class="bg-dark p-1 fixed-top d-inline-block d-flex">
+		<img src="./images/LOGO.jpg" class="p-2 mr-auto rounded-circle">
+		<a href="#" class="p-3 text-light">Home</a>
+		<a href="#" class="p-3 text-light">Menu</a>
+		<a href="#" class="p-3 text-light">Contact Us</a>
+		<a href="#" class="p-3 text-light">Leave a Review</a>
+		<a href="#" class="p-3 text-light">
+			<button class="order-button">ORDER NOW</button>
+		</a>
+	</div>
 
 <!-- Landing Page -->
+	<div class="pt-5 ">
 	<section id="bg-image">
-        <div class="front-bg">
-            <div class="container">
-                <h1 class="title">Mouthwatering food to satisfy you Daily Cravings.</h1>
-                <h2 class="subtitle">
-                    Serving a Mouthwatering Japanese food available are Takoyaki, Gyoza, Yakisoba, Bento Meals and Milktea to quench your thirst.
-                </h2>
-                <button class="order-button2">ORDER NOW</button>
-            </div>
-        </div> 
-    </section>
+		<div class="front-bg">
+			<div class="container">
+				<h1 class="title">Mouthwatering food that satisfy your Daily Cravings.</h1>
+				<h2 class="subtitle">Serving a Special Homemade Japanese food. Available are Takoyaki, Gyoza, Yakisoba, Bento Meals and Milktea to quench your thirst.</h2>
+				<button class="order-button2">ORDER NOW</button>
+			</div>
+		</div>		
+	</section>
+	</div>
 
-
-	<h2 class="bg-dark text-light text-center mt-5">GOOD FOOD!!!</h2>
- 	<div class="row d-none d-md-block mt-md-5">
+	<div class="bg-dark mr-auto vw-100">
+		<h2 class="bg-danger text-light text-center mt-5">We are happy to serve!</h2>
+		
+		<div class="row d-none d-md-block mt-md-2">
     	<div class="offset-xl-3 col-xl-6 w-100">
+    		
     		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   				<ol class="carousel-indicators">
     				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -88,15 +83,154 @@
   			</button>
 			</div>
 		</div>
+		</div>
 	</div>
 
-	<!-- contact section -->
+<!-- project section -->
+<!-- Contact Section/tool section-->
+	<div class="bg-secondary text-light min-vh-100 p-5">
+		<div class="card-deck">
+
+			<div class="card bg-dark text-light p-3">
+				<h4 class="text-center text-light">Contact Us</h4>
+				<div class="card-body text-center">
+					<form>
+						<label for="name" class="col-12">Name</label>
+						<input type="text" name="name" class="col-12" required autocomplete>
+
+						<label for="email" class="col-12">Email Address</label>
+						<input type="email" name="email" class="col-12" required autocomplete>
+
+						<label for="contact-no" class="col-12">Contact Number</label>
+						<input type="text" name="contact-no" class="col-12" required autocomplete>
+
+						<label for="concern" class="col-12">Concern</label>
+						<div class="dropdown">
+  								<button class="btn btn-light dropdown-toggle w-100" type="button" data-toggle="dropdown" aria-expanded="false">Ask us</button>
+  							<div class="dropdown-menu">
+    							<a class="dropdown-item" href="#">Reservations</a>
+    							<a class="dropdown-item" href="#">Follow-up</a>
+    							<a class="dropdown-item" href="#">Packages to Offer</a>
+  							</div>
+						</div>
+
+						<label for="message" class="col-12">Message</label>
+						<textarea name="message" rows="5" id="message" class="col-12"></textarea>
+
+						<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+
+							<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  								<div class="modal-dialog">
+    								<div class="modal-content">
+      									<div class="modal-header">
+        									<h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+        									</button>
+      									</div>
+
+    									<div class="modal-body">Message successfully sent.
+      									</div>
+
+    									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    									</div>
+    								</div>
+  								</div>
+							</div>
+					</form>
+				</div>
+			</div>
 
 
+			<div class="card bg-dark text-light p-3">
+				<h4 class="text-center text-light">Leave a Review</h4>
+				<div class="card-body text-center">
+					<form>
+						<label for="name" class="col-12">Name</label>
+						<input type="text" name="name" class="col-12" required autocomplete>
+
+						<label for="email" class="col-12">Email Address</label>
+						<input type="email" name="email" class="col-12" required autocomplete>
+
+						<label for="contact-no" class="col-12">Contact Number</label>
+						<input type="text" name="contact-no" class="col-12" required autocomplete>
+
+						<label for="review" class="col-12">Reviews</label>
+						<textarea name="review" rows="8" id="review" class="col-12"></textarea>
+
+						<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Send review</button>
+
+							<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  								<div class="modal-dialog">
+    								<div class="modal-content">
+      									<div class="modal-header">
+        									<h5 class="modal-title" id="exampleModalLabel">Thank you for your feedback!</h5>
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+        									</button>
+      									</div>
+
+    									<div class="modal-body">Feedback successfully sent.
+      									</div>
+
+    									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    									</div>
+    								</div>
+  								</div>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	
+<!-- Tools Section Start -->
+        <div class="text-center pt-3">
+            <h3>You can also find us @:</h3>
+
+                <div>
+                    <div class="p-3 d-flex flex-row justify-content-center">
+                        <img width="150" src="./images/f_logo_RGB-Hex-Blue_512.png"/ class="img-fluid p-3">
+                        <img width="150" src="./images/fb page qr code.png"/ class="img-fluid p-3">
+                    </div>
+                    <div class="p-3 d-flex flex-row justify-content-center">
+                        <img width="200" src="./images/grabfood-logo.png"/ class="img-fluid p-3">
+                        <img width="150" src="./images/FoodPanda-logo.png"/ class="img-fluid p-3">
+                    </div>
+                </div>
+                <!-- Core Tools Section End -->
+                
+                <!-- Other Tools Section Start -->
+            <h3 class="pt-5">We accept:</h3>
+
+                <div>
+                    <div class="p-3 d-flex flex-row justify-content-center">
+                        <img width="150" src="./images/cash-on-delivery-magento.png"/ class="img-fluid p-3">
+                        <img width="120" src="./images/BPI.jpg"/ class="img-fluid p-3">
+                        <img width="100" src="./images/gcash.png"/ class="img-fluid p-3">
+                        <img width="100" src="./images/paymaya.png"/ class="img-fluid p-3">
+                    </div>
+                </div>
+        </div>
+
+    <div class="pt-5">
+    	<div class="bg-dark text-light d-inline-block text-center w-100">
+        	<span>&copy; 2020 Ay! Takoyaki Atbp. Snack House. All Rights Reserved</span>
+    	</div>
+    </div>
+
+
+
+
+
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
