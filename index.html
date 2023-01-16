@@ -11,23 +11,41 @@
 	<title>Capstone 1 Project</title>
 </head>
 <body>
-	<div class="bg-dark p-1 fixed-top d-inline-block d-flex">
-		<img src="./images/LOGO.jpg" class="p-2 mr-auto rounded-circle">
-		<a href="#" class="p-3 text-light">Home</a>
-		<a href="#" class="p-3 text-light">Menu</a>
-		<a href="#Contactus" class="p-3 text-light">Contact Us</a>
-		<a href="#Contactus" class="p-3 text-light">Leave a Review</a>
-		<a href="#" class="p-3 text-light">
-			<button class="order-button">ORDER NOW</button>
-		</a>
+	<div class="bg-dark p-1 pr-5 mr-2 fixed-top d-flex col-sm-12 col-md-12 col-12">
+		
+		<nav class="navbar navbar-light bg-dark">
+  			<a class="navbar-brand" href="#">
+    		<img src="./images/LOGO.jpg" width="50" height="50" alt="">
+  			</a>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark text-light">
+  			<a class="navbar-brand text-light" href="#">Home</a>
+  			<button class="order-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-link active p-3 text-light" href="#">Menu</a>
+      				<a class="nav-link p-3 text-light" href="#Contact">Contact us</a>
+      				<a class="nav-link p-3 text-light" href="#Reviews">Leave a Review</a>
+      				<a class="nav-link p-3 text-light" href="#"><button class="order-button">ORDER NOW</button></a>
+    			</div>
+  			</div>
+
+		</nav>
+
+
 	</div>
 
-	<div class="pt-5">
+<!-- Landing Page -->
+	<div class="pt-5 w-sm-100">
 	<section id="bg-image">
 		<div class="front-bg">
-			<div class="container">
+			<div class="container pr-sm-3 p-md-3">
 				<h1 class="title">Mouthwatering food that satisfy your Daily Cravings.</h1>
-				<h2 class="subtitle">Serving a Special Homemade Japanese food. Available are Takoyaki, Gyoza, Yakisoba, Bento Meals and Milktea to quench your thirst.</h2>
+				<h2 class="subtitle">Serving a Special Homemade Japanese food.</h2>
+				<h2 class="sub2">Available are Takoyaki, Gyoza, Yakisoba, Bento Meals and Milktea to quench your thirst.</h2>
 				<button class="order-button2">ORDER NOW</button>
 			</div>
 		</div>		
@@ -35,9 +53,9 @@
 	</div>
 
 	<div class="bg-dark mr-auto vw-100">
-		<h2 class="bg-danger text-light text-center mt-5">We are happy to serve!</h2>
+		<h2 class="bg-danger text-light text-center mt-2">We are happy to serve!</h2>
 		
-		<div class="row d-none d-md-block mt-md-2">
+		<div class="row d-flex w-sm-100 d-md-block mt-md-2">
     	<div class="offset-xl-3 col-xl-6 w-100">
     		
     		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -85,12 +103,13 @@
 		</div>
 	</div>
 
+<!-- project section -->
 <!-- Contact Section/tool section-->
-	<div id="Contactus" class="bg-secondary text-light min-vh-100 p-5">
+	<div class="bg-secondary text-light p-5">
 		<div class="card-deck">
 
-			<div class="card bg-dark text-light p-3">
-				<h4 id="Contactus" class="text-center text-light">Contact Us</h4>
+			<div id="Contact" class="card bg-dark text-light p-3">
+				<h4 class="text-center text-light">Contact Us</h4>
 				<div class="card-body text-center">
 					<form>
 						<label for="name" class="col-12">Name</label>
@@ -141,7 +160,7 @@
 			</div>
 
 
-			<div id="Contactus" class="card bg-dark text-light p-3">
+			<div id="Reviews" class="card bg-dark text-light p-3">
 				<h4 class="text-center text-light">Leave a Review</h4>
 				<div class="card-body text-center">
 					<form>
@@ -192,37 +211,37 @@
 
                 <div>
                     <div class="p-3 d-flex flex-row justify-content-center">
-                        <img width="150" src="./images/f_logo_RGB-Hex-Blue_512.png"/ class="img-fluid p-3">
-                        <img width="150" src="./images/fb page qr code.png"/ class="img-fluid p-3">
+                        <img width="120" src="./images/f_logo_RGB-Hex-Blue_512.png"/ class="img-fluid p-3">
+                        <img width="120" src="./images/fb page qr code.png"/ class="img-fluid p-3">
                     </div>
                     <div class="p-3 d-flex flex-row justify-content-center">
-                        <img width="200" src="./images/grabfood-logo.png"/ class="img-fluid p-3">
+                        <img width="170" src="./images/grabfood-logo.png"/ class="img-fluid p-3">
                         <img width="150" src="./images/FoodPanda-logo.png"/ class="img-fluid p-3">
                     </div>
                 </div>
                 <!-- Core Tools Section End -->
                 
                 <!-- Other Tools Section Start -->
-            <h3 class="pt-5">We accept:</h3>
+            <h3 class="pt-3">We accept:</h3>
 
                 <div>
                     <div class="p-3 d-flex flex-row justify-content-center">
-                        <img width="150" src="./images/cash-on-delivery-magento.png"/ class="img-fluid p-3">
-                        <img width="120" src="./images/BPI.jpg"/ class="img-fluid p-3">
-                        <img width="100" src="./images/gcash.png"/ class="img-fluid p-3">
-                        <img width="100" src="./images/paymaya.png"/ class="img-fluid p-3">
+                        <img width="110" src="./images/cash-on-delivery-magento.png"/ class="img-fluid p-2">
+                        <img width="100" src="./images/BPI.jpg"/ class="img-fluid p-2">
+                        <img width="100" src="./images/bdo.png"/ class="img-fluid p-2">
+                    </div>
+                    <div class="p-3 d-flex flex-row justify-content-center">
+                        <img width="100" src="./images/gcash.png"/ class="img-fluid p-2">
+                        <img width="100" src="./images/paymaya.png"/ class="img-fluid p-2">
                     </div>
                 </div>
         </div>
 
-    <div class="pt-5">
+    <div class="pt-2 pb-">
     	<div class="bg-dark text-light d-inline-block text-center w-100">
         	<span>&copy; 2020 Ay! Takoyaki Atbp. Snack House. All Rights Reserved</span>
     	</div>
     </div>
-
-
-
 
 
 	</div>

@@ -2,6 +2,7 @@
 	font-family: 'Roboto Slab', serif;
 }
 
+
 .order-button{
 	background-color: #FA7B03;
 	color: white;
@@ -13,7 +14,7 @@
 
 #bg-image{
 	min-height: 50vh;
-	background-image: url(https://scontent.fmnl10-1.fna.fbcdn.net/v/t39.30808-6/264580087_505296647945740_4060128259841380293_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeG5VTgeujNZdQAkUIox4m1JCxgvNkcN3IQLGC82Rw3chBL4OD7fhC6fRgyGq5UBFtRl8jtuW-zehzecJWDYrSuk&_nc_ohc=zhfuSt0JgVQAX9fXFfH&_nc_ht=scontent.fmnl10-1.fna&oh=00_AfBRRiydJXiBohZy3gb8mhCevVa0oxpoHB_anyBek2wu7A&oe=63C49233);
+	background-image: url(https://scontent.fmnl10-1.fna.fbcdn.net/v/t39.30808-6/264580087_505296647945740_4060128259841380293_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeG5VTgeujNZdQAkUIox4m1JCxgvNkcN3IQLGC82Rw3chBL4OD7fhC6fRgyGq5UBFtRl8jtuW-zehzecJWDYrSuk&_nc_ohc=H6wQuhkEs8QAX8QbTii&_nc_ht=scontent.fmnl10-1.fna&oh=00_AfAHPb630K_p_VJy9Dv-bR8aViiAdE1lvqCu0q9MfsPtNw&oe=63CA80F3);
 	background-repeat: no-repeat;
 	background-size: 100vw;
 	background-position: center;
@@ -28,23 +29,26 @@
 	color: white;
 	display: inline-block;
 	text-align: right;
-	margin-right: 8rem;
 }
 
 .title{
 	font-family: 'Zilla Slab', serif;
 	font-weight: bold;
-	font-size: 45px;
+	font-size: 40px;
 	line-height: 1em;
 	padding-top: 1em;
 }
 
 .subtitle{
-	margin-left: 30em;
 	font-size: 20px;
-	text-align: right-justify;
 	line-height: 1.5em;
 	padding-top: 10em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.sub2{
+	font-size: 16px;
+	line-height: 1.5em;
 	font-family: 'Montserrat', sans-serif;
 }
 
